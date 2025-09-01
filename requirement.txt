@@ -1,0 +1,31 @@
+# Core RAG Components
+cohere>=5.0.0
+chromadb>=0.4.24
+groq>=0.7.0
+unstructured[all-docs]>=0.10.18
+unstructured[pdf]>=0.10.18          # For PDF parsing with layout/table support
+unstructured[docx]>=0.10.18         # For Word documents
+unstructured[excel]>=0.10.18        # For CSV/XLSX
+unstructured[pptx]>=0.10.18         # For PowerPoint (optional)
+
+# File processing & data handling
+python-dotenv>=1.0.0                # For loading environment variables
+pandas>=2.0.0                       # For structured data (CSV, XLSX)
+openpyxl>=3.0.0                     # For reading .xlsx files
+pdf2image>=1.16.0                   # For PDF-to-image (if using OCR)
+pillow>=9.0.0                       # Image processing (dependency for OCR/pdf2image)
+
+# Optional: OCR support for scanned PDFs
+ocrmypdf>=13.0.0                    # Required if processing scanned PDFs
+
+# FastAPI (optional: for creating an API endpoint)
+fastapi>=0.104.0
+uvicorn>=0.23.0
+
+# Streamlit (optional: for UI)
+streamlit>=1.27.0 
+
+unstructured[all-docs]>=0.10.15
+pdf2image>=1.16.0
+pytesseract>=0.3.10
+pillow>=9.0.0
